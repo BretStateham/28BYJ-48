@@ -14,15 +14,12 @@ int currentStep = 0;
 //Relative to the face of the motor. 
 //Clockwise (true) or Counterclockwise(false)
 //We'll default to clockwise
-bool clockwise = false;
+bool clockwise = true;
 
 // How many steps to go before reversing, set to zero to not bounce.
 //int targetSteps = 0;  //targetSteps 0 means the motor will just run in a single direction.
 int targetSteps = 2048;  //2049 steps per rotation when wave or full stepping
 //int targetSteps = 4096;  //4096 steps per rotation when half stepping
-
-// Well use the step count in the loop method to help with logic
-int waveStepCount = 4;
 
 void setup() {
   // put your setup code here, to run once:

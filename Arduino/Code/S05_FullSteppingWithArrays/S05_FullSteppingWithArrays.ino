@@ -104,5 +104,5 @@ void loop() {
   //about the shortest delay that is usable.  Anything
   //lower and the motor starts to freeze. 
   //delayMicroseconds(2250);
-  delay(1000);
+  delay(2);
 }

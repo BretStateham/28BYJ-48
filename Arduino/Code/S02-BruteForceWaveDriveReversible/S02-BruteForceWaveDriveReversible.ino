@@ -11,7 +11,7 @@ int currentStep = 0;
 //Relative to the face of the motor. 
 //Clockwise (true) or Counterclockwise(false)
 //We'll default to clockwise
-bool clockwise = false;
+bool clockwise = true;
 
 void setup() {
   // put your setup code here, to run once:

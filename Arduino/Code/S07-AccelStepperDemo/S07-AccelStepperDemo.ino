@@ -31,7 +31,8 @@ bool clockwise = true;
 int targetPosition = 4096;  //4096 steps per rotation when half stepping
 
 // Initialize with pin sequence IN1-IN3-IN2-IN4 for using the AccelStepper with 28BYJ-48
-//AccelStepper stepper1(HALFSTEP, motorPin1, motorPin3, motorPin2, motorPin4);
+// Notice, I'm passing them as Blue, Yellow, Pink, Orange (coil ends order) not
+// Blue, Pink, Yellow, Orange (firing order). 
 AccelStepper stepper1(HALFSTEP, blue, yellow, pink, orange);
 
 void setup() {

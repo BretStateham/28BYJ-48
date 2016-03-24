@@ -24,7 +24,7 @@ int currentStep = 0;
 //Relative to the face of the motor. 
 //Clockwise (true) or Counterclockwise(false)
 //We'll default to clockwise
-bool clockwise = false;
+bool clockwise = true;
 
 // How many steps to go before reversing, set to zero to not bounce.
 //int targetSteps = 0;  //targetSteps 0 means the motor will just run in a single direction.
