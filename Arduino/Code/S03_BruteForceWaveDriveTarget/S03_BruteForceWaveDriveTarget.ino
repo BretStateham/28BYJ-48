@@ -18,7 +18,7 @@ bool clockwise = true;
 
 // How many steps to go before reversing, set to zero to not bounce.
 //int targetSteps = 0;  //targetSteps 0 means the motor will just run in a single direction.
-int targetSteps = 2048;  //2049 steps per rotation when wave or full stepping
+int targetSteps = 2048;  //2048 steps per rotation when wave or full stepping
 //int targetSteps = 4096;  //4096 steps per rotation when half stepping
 
 void setup() {
