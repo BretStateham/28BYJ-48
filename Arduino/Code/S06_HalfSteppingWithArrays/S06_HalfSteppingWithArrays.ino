@@ -54,7 +54,14 @@ bool clockwise = true;
 // How many steps to go before reversing, set to zero to not bounce.
 //int targetSteps = 0;  //targetSteps 0 means the motor will just run in a single direction.
 //int targetSteps = 2048;  //2049 steps per rotation when wave or full stepping
-int targetSteps = 4096;  //4096 steps per rotation when half stepping
+//int targetSteps = 4096;  //4096 steps per rotation when half stepping
+
+int motorSteps = 32;
+int motorPhases = 4; //blue, pink, yello, orange
+int stepsInSequence = 8; //4 steps in for Wave for Full Step sequances, 8 steps for Half Step sequence
+int gearRatio = 16;
+float desiredRotations = 0;
+float targetSteps = motorSteps * gearRatio * desiredRotations * (stepsInSequence / motorPhases);  //2048 steps per rotation when wave or full stepping
 
 void setup() {
   // put your setup code here, to run once:
@@ -123,5 +130,6 @@ void loop() {
   //about the shortest delay that is usable.  Anything
   //lower and the motor starts to freeze. 
   //delayMicroseconds(2250);
-  delay(1);
+  //delay(2);
+  delayMicroseconds(8000);
 }
