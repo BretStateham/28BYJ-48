@@ -89,7 +89,7 @@ void loop() {
   if(targetSteps != 0 && currentStep == targetSteps){
     currentStep = 0;
     clockwise = !clockwise;
-  } else if(targetSteps == 0 && currentStep == (stepCount-1)) {
+  } else if(targetSteps == 0 && currentStep == stepCount) {
     // don't reverse direction, just reset the currentStep to 0
     // resetting this will prevent currentStep from 
     // eventually overflowing the int variable it is stored in.
